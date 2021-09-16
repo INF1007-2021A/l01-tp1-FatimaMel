@@ -8,7 +8,7 @@ def trouverAngle(nombreComplexe):
 
 def trouverModule(nombreComplexe):
     # TODO: Calculer le module du nombre complexe et l'assigner dans "module"
-    module = abs(nombreComplexe)
+    module = math.sqrt(((nombreComplexe.real)**2) + ((nombreComplexe.imag)**2))
     return module
 
 def effectuerRotation(nombreComplexe, angle_rotation, trouverModule):
@@ -22,12 +22,14 @@ def effectuerRotation(nombreComplexe, angle_rotation, trouverModule):
 
     # TODO: Calculer le nouveau nombre complexe après rotation, assigner le nouveau nombre complexe à la variable 'resultat'
 
-    resultat = ((math.cos(angle_rotation))*(nombreComplexe.real)) + ((math.sin(angle_rotation))*(nombreComplexe.imag))
+    resultat = complex((math.cos(math.radians(angle_rotation))), (math.sin(math.radians(angle_rotation)))) * nombreComplexe
 
     nouveauModule = trouverModule(resultat)
     nouvelAngle = trouverAngle(resultat)
 
     # TODO : Afficher le nouveau module et le nouvel angle du nombre complexe après rotation (3 decimales de précision)
+    print("Le nouvelle angle du nombre complexe:", round(nouvelAngle, 3), ".")
+    print("Le nouvelle module du nombre complexe:", round(nouveauModule, 3), ".")
 
     return resultat
 

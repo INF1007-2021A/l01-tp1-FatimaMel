@@ -1,4 +1,5 @@
 def fizzBuzz(n):
+    resultat = ""
     if (n % 3 == 0 and n % 5 == 0):
         resultat = "fizzbuzz"
 
