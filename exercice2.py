@@ -1,6 +1,7 @@
 import math
 
 
+
 def resoudreEquation(a, b, c):
     # TODO: Calculer le discriminant et assigner la valeur dans la variable "delta"
     delta = (b**2 - 4*a*c)

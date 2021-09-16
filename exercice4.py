@@ -11,6 +11,7 @@ def calculerPosition(positionInitiale, vitesseInitiale, duree, vitesseFinale):
 
     return positionFinale
 
+
 if __name__ == '__main__':
     positionInitiale = int(input("Entrez la position initiale en mètre: "))
     vitesseInitiale = int(input("Entrez la vitesse initiale en km/h: "))

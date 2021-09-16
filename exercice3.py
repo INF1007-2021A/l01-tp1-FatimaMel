@@ -43,6 +43,7 @@ def decomposer(secondes):
 
     return (annees ,semaines ,jours ,heures ,minutes ,secondes)
 
+
 if __name__ == '__main__':
     secondes = int(input("Entrer les secondes: "))
     print(decomposer(secondes))
